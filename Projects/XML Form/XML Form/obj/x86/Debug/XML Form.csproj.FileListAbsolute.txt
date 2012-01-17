@@ -1,9 +1,0 @@
-C:\Documents and Settings\szorilla\My Documents\Visual Studio 2010\Projects\XML Form\XML Form\bin\Debug\XML Form.exe
-C:\Documents and Settings\szorilla\My Documents\Visual Studio 2010\Projects\XML Form\XML Form\bin\Debug\XML Form.pdb
-C:\Documents and Settings\szorilla\My Documents\Visual Studio 2010\Projects\XML Form\XML Form\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Documents and Settings\szorilla\My Documents\Visual Studio 2010\Projects\XML Form\XML Form\obj\x86\Debug\XML_Form.Form1.resources
-C:\Documents and Settings\szorilla\My Documents\Visual Studio 2010\Projects\XML Form\XML Form\obj\x86\Debug\XML_Form.Properties.Resources.resources
-C:\Documents and Settings\szorilla\My Documents\Visual Studio 2010\Projects\XML Form\XML Form\obj\x86\Debug\GenerateResource.read.1.tlog
-C:\Documents and Settings\szorilla\My Documents\Visual Studio 2010\Projects\XML Form\XML Form\obj\x86\Debug\GenerateResource.write.1.tlog
-C:\Documents and Settings\szorilla\My Documents\Visual Studio 2010\Projects\XML Form\XML Form\obj\x86\Debug\XML Form.exe
-C:\Documents and Settings\szorilla\My Documents\Visual Studio 2010\Projects\XML Form\XML Form\obj\x86\Debug\XML Form.pdb
