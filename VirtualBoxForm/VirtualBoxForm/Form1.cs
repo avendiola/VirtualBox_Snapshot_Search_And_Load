@@ -8,10 +8,19 @@ using System.Text;
 using System.Windows.Forms;
 using System.Xml;
 using System.Xml.XPath;
+<<<<<<< HEAD
 using System.IO;
 using System.Reflection;
 using System.Collections;
 using System.Diagnostics;
+=======
+using System.DirectoryServices;
+using System.Diagnostics;
+using System.IO;
+using System.Reflection;
+using System.Collections;
+
+>>>>>>> cf35eff97007bc61b8a99437f87b2cff4371e22e
 
 namespace VirtualBoxForm
 {
@@ -24,11 +33,29 @@ namespace VirtualBoxForm
 
         private void Form1_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
+=======
+            //initialize the controls and the form
+            //label1.Text = "Filepath";
+            //textBox1.Text = Application.StartupPath + "sample1.xml";
+            button1.Text = "Populate the treeview with XML";
+            textBox1.Hide();
+            label2.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            txtNodeSearch.Focus();
+>>>>>>> cf35eff97007bc61b8a99437f87b2cff4371e22e
             try
             {
                 //SECTION 1. Create a DOM Document and load the XML data into it.
                 XmlDocument dom = new XmlDocument();
+<<<<<<< HEAD
                 dom.Load("Virtual Machine.xml");
+=======
+                dom.Load("New Machine.xml");
+>>>>>>> cf35eff97007bc61b8a99437f87b2cff4371e22e
 
                 //SECTION 2. Initialize the TreeView control.
                 treeView1.Nodes.Clear();
@@ -159,6 +186,7 @@ namespace VirtualBoxForm
             return false;
         }
 
+<<<<<<< HEAD
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
             lstbox.Items.Add(treeView1.SelectedNode);
@@ -183,6 +211,14 @@ namespace VirtualBoxForm
             vbproc.StartInfo.WorkingDirectory = @"C:\Program Files\Oracle\VirtualBox";
             vbproc.StartInfo.Arguments = "VBoxManage snapshot 'Virtual Machine' restore 'Snapshot 4'";
             vbproc.Start();
+=======
+        private void cmdVM_Click_1(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process proc = new System.Diagnostics.Process();
+            proc.EnableRaisingEvents = false;
+            proc.StartInfo.FileName = "C:\\Program Files\\Oracle\\VirtualBox\\VirtualBox";
+            proc.Start();
+>>>>>>> cf35eff97007bc61b8a99437f87b2cff4371e22e
         }
     }
 }
