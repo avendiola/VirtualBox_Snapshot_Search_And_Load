@@ -1,0 +1,9 @@
+C:\Documents and Settings\szorilla\My Documents\Visual Studio 2010\Projects\VirtualBoxForm\VirtualBoxForm\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\szorilla\My Documents\Visual Studio 2010\Projects\VirtualBoxForm\VirtualBoxForm\obj\x86\Debug\VirtualBoxForm.Form1.resources
+C:\Documents and Settings\szorilla\My Documents\Visual Studio 2010\Projects\VirtualBoxForm\VirtualBoxForm\obj\x86\Debug\VirtualBoxForm.Properties.Resources.resources
+C:\Documents and Settings\szorilla\My Documents\Visual Studio 2010\Projects\VirtualBoxForm\VirtualBoxForm\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\szorilla\My Documents\Visual Studio 2010\Projects\VirtualBoxForm\VirtualBoxForm\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\szorilla\My Documents\Visual Studio 2010\Projects\VirtualBoxForm\VirtualBoxForm\bin\Debug\VirtualBoxForm.exe
+C:\Documents and Settings\szorilla\My Documents\Visual Studio 2010\Projects\VirtualBoxForm\VirtualBoxForm\bin\Debug\VirtualBoxForm.pdb
+C:\Documents and Settings\szorilla\My Documents\Visual Studio 2010\Projects\VirtualBoxForm\VirtualBoxForm\obj\x86\Debug\VirtualBoxForm.exe
+C:\Documents and Settings\szorilla\My Documents\Visual Studio 2010\Projects\VirtualBoxForm\VirtualBoxForm\obj\x86\Debug\VirtualBoxForm.pdb
