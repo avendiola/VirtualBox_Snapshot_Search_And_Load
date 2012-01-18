@@ -1,0 +1,5 @@
+C:\Documents and Settings\szorilla\My Documents\Visual Studio 2010\Projects\ExampleVirtual\ExampleVirtual\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\szorilla\My Documents\Visual Studio 2010\Projects\ExampleVirtual\ExampleVirtual\obj\x86\Debug\ListView.Form1.resources
+C:\Documents and Settings\szorilla\My Documents\Visual Studio 2010\Projects\ExampleVirtual\ExampleVirtual\obj\x86\Debug\ExampleVirtual.Properties.Resources.resources
+C:\Documents and Settings\szorilla\My Documents\Visual Studio 2010\Projects\ExampleVirtual\ExampleVirtual\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\szorilla\My Documents\Visual Studio 2010\Projects\ExampleVirtual\ExampleVirtual\obj\x86\Debug\GenerateResource.write.1.tlog

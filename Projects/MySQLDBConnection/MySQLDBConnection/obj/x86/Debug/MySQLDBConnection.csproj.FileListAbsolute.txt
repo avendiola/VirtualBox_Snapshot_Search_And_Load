@@ -1,0 +1,5 @@
+c:\documents and settings\szorilla\my documents\visual studio 2010\Projects\MySQLDBConnection\MySQLDBConnection\bin\Debug\MySQLDBConnection.exe
+c:\documents and settings\szorilla\my documents\visual studio 2010\Projects\MySQLDBConnection\MySQLDBConnection\bin\Debug\MySQLDBConnection.pdb
+c:\documents and settings\szorilla\my documents\visual studio 2010\Projects\MySQLDBConnection\MySQLDBConnection\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\szorilla\my documents\visual studio 2010\Projects\MySQLDBConnection\MySQLDBConnection\obj\x86\Debug\MySQLDBConnection.exe
+c:\documents and settings\szorilla\my documents\visual studio 2010\Projects\MySQLDBConnection\MySQLDBConnection\obj\x86\Debug\MySQLDBConnection.pdb
