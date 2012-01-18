@@ -177,11 +177,11 @@ namespace VirtualBoxForm
 
         private void lstbox_DoubleClick(object sender, EventArgs e)
         {
-            System.Diagnostics.Process vbproc = new System.Diagnostics.Process();
-            vbproc.StartInfo.FileName = @"C:\Program Files\Oracle\VirtualBox\VBoxManage.exe";
-            vbproc.StartInfo.Arguments = "cmd.exe";
-            vbproc.StartInfo.WorkingDirectory = @"C:\Documents and Settings\szorilla\VirtualBox VMs\Virtual Machine\Snapshots\2012-01-04T10-48-09-841877700Z.sav";
-            vbproc.Start();
+                System.Diagnostics.Process vbproc = new System.Diagnostics.Process();
+                vbproc.StartInfo.FileName = @"C:\Documents and Settings\szorilla\VirtualBox VMs\Virtual Machine\Virtual Machine.vbox";
+                vbproc.StartInfo.Arguments = "2012-01-04T10-48-09-841877700Z.sav";
+                vbproc.StartInfo.WorkingDirectory = @"C:\Program Files\Oracle\VirtualBox\VirtualBox.exe";
+                vbproc.Start();
+            }
         }
     }
-}
