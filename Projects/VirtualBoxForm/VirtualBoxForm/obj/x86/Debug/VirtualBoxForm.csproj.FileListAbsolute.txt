@@ -7,3 +7,5 @@ C:\Documents and Settings\szorilla\My Documents\Visual Studio 2010\Projects\Virt
 C:\Documents and Settings\szorilla\My Documents\Visual Studio 2010\Projects\VirtualBoxForm\VirtualBoxForm\bin\Debug\VirtualBoxForm.pdb
 C:\Documents and Settings\szorilla\My Documents\Visual Studio 2010\Projects\VirtualBoxForm\VirtualBoxForm\obj\x86\Debug\VirtualBoxForm.exe
 C:\Documents and Settings\szorilla\My Documents\Visual Studio 2010\Projects\VirtualBoxForm\VirtualBoxForm\obj\x86\Debug\VirtualBoxForm.pdb
+C:\VirtualBox_Snapshot_Search_And_Load\Projects\VirtualBoxForm\VirtualBoxForm\obj\x86\Debug\VirtualBoxForm.exe
+C:\VirtualBox_Snapshot_Search_And_Load\Projects\VirtualBoxForm\VirtualBoxForm\obj\x86\Debug\VirtualBoxForm.pdb
