@@ -179,7 +179,7 @@ namespace VirtualBoxForm
         {
                 System.Diagnostics.Process vbproc = new System.Diagnostics.Process();
                 vbproc.StartInfo.FileName = @"C:\Documents and Settings\szorilla\VirtualBox VMs\Virtual Machine\Virtual Machine.vbox";
-                vbproc.StartInfo.Arguments = "2012-01-04T10-48-09-841877700Z.sav";
+                vbproc.StartInfo.Arguments = "VirtualBox.exe";
                 vbproc.StartInfo.WorkingDirectory = @"C:\Program Files\Oracle\VirtualBox\VirtualBox.exe";
                 vbproc.Start();
             }

@@ -1,9 +1,0 @@
-c:\documents and settings\szorilla\my documents\visual studio 2010\Projects\Virtual\Virtual\obj\x86\Debug\ResolveAssemblyReference.cache
-c:\documents and settings\szorilla\my documents\visual studio 2010\Projects\Virtual\Virtual\obj\x86\Debug\Virtual.Properties.Resources.resources
-c:\documents and settings\szorilla\my documents\visual studio 2010\Projects\Virtual\Virtual\obj\x86\Debug\GenerateResource.read.1.tlog
-c:\documents and settings\szorilla\my documents\visual studio 2010\Projects\Virtual\Virtual\obj\x86\Debug\GenerateResource.write.1.tlog
-c:\documents and settings\szorilla\my documents\visual studio 2010\Projects\Virtual\Virtual\bin\Debug\Virtual.exe
-c:\documents and settings\szorilla\my documents\visual studio 2010\Projects\Virtual\Virtual\bin\Debug\Virtual.pdb
-c:\documents and settings\szorilla\my documents\visual studio 2010\Projects\Virtual\Virtual\obj\x86\Debug\Virtual.exe
-c:\documents and settings\szorilla\my documents\visual studio 2010\Projects\Virtual\Virtual\obj\x86\Debug\Virtual.pdb
-C:\Documents and Settings\szorilla\My Documents\Visual Studio 2010\Projects\Virtual\Virtual\obj\x86\Debug\Virtual.Form2.resources
