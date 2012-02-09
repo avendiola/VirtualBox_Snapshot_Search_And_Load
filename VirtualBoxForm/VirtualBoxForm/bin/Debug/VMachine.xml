@@ -1,0 +1,814 @@
+<?xml version="1.0"?>
+<VirtualBox xmlns="http://www.innotek.de/VirtualBox-settings" version="1.12-windows">
+  <Machine uuid="{641ea5bb-4ecf-481a-ac77-5992867e5639}" name="Virtual Machine" OSType="WindowsXP" currentSnapshot="{195be88e-08f9-4708-bdf7-f0e6c589c0fd}" snapshotFolder="Snapshots" lastStateChange="2012-01-30T09:51:46Z">
+    <MediaRegistry>
+      <HardDisks>
+        <HardDisk uuid="{e157ac65-e0de-484c-a771-4d4f0adb7876}" location="Virtual Machine.vdi" format="VDI" type="Normal">
+          <HardDisk uuid="{097a4242-860b-4d85-872b-3dbd783a63e7}" location="Snapshots/{097a4242-860b-4d85-872b-3dbd783a63e7}.vdi" format="VDI">
+            <HardDisk uuid="{4fcb5de9-e5d6-43ed-a95d-4f1934be74be}" location="Snapshots/{4fcb5de9-e5d6-43ed-a95d-4f1934be74be}.vdi" format="VDI">
+              <HardDisk uuid="{b485fa05-6fab-48ea-aaf3-38046f0e2f94}" location="Snapshots/{b485fa05-6fab-48ea-aaf3-38046f0e2f94}.vdi" format="VDI">
+                <HardDisk uuid="{6bbd3bd0-147c-4e93-90ec-466e8434f441}" location="Snapshots/{6bbd3bd0-147c-4e93-90ec-466e8434f441}.vdi" format="VDI"/>
+              </HardDisk>
+            </HardDisk>
+            <HardDisk uuid="{fbc76fca-501e-493d-a08f-969ed225ca27}" location="Snapshots/{fbc76fca-501e-493d-a08f-969ed225ca27}.vdi" format="VDI"/>
+          </HardDisk>
+        </HardDisk>
+      </HardDisks>
+      <DVDImages/>
+      <FloppyImages/>
+    </MediaRegistry>
+    <ExtraData>
+      <ExtraDataItem name="GUI/InfoDlgState" value="400,450,normal"/>
+      <ExtraDataItem name="GUI/LastCloseAction" value="powerOff"/>
+      <ExtraDataItem name="GUI/LastGuestSizeHint" value="800,600"/>
+      <ExtraDataItem name="GUI/LastNormalWindowPosition" value="723,200,800,641"/>
+    </ExtraData>
+    <Snapshot uuid="{141cb1d5-a78f-426f-a89d-923faf8d8f26}" name="Snapshot 1" timeStamp="2012-01-04T10:48:09Z" stateFile="Snapshots/2012-01-04T10-48-09-841877700Z.sav">
+      <Description>CentOS startup installation</Description>
+      <Hardware version="2">
+        <CPU count="1" hotplug="false">
+          <HardwareVirtEx enabled="true" exclusive="false"/>
+          <HardwareVirtExNestedPaging enabled="true"/>
+          <HardwareVirtExVPID enabled="true"/>
+          <PAE enabled="false"/>
+          <HardwareVirtExLargePages enabled="false"/>
+          <HardwareVirtForce enabled="false"/>
+        </CPU>
+        <Memory RAMSize="512" PageFusion="false"/>
+        <HID Pointing="USBTablet" Keyboard="PS2Keyboard"/>
+        <HPET enabled="false"/>
+        <Chipset type="PIIX3"/>
+        <Boot>
+          <Order position="1" device="Floppy"/>
+          <Order position="2" device="DVD"/>
+          <Order position="3" device="HardDisk"/>
+          <Order position="4" device="None"/>
+        </Boot>
+        <Display VRAMSize="16" monitorCount="1" accelerate3D="false" accelerate2DVideo="false"/>
+        <RemoteDisplay enabled="false" authType="Null" authTimeout="5000"/>
+        <BIOS>
+          <ACPI enabled="true"/>
+          <IOAPIC enabled="false"/>
+          <Logo fadeIn="true" fadeOut="true" displayTime="0"/>
+          <BootMenu mode="MessageAndMenu"/>
+          <TimeOffset value="0"/>
+          <PXEDebug enabled="false"/>
+        </BIOS>
+        <USBController enabled="true" enabledEhci="false"/>
+        <Network>
+          <Adapter slot="0" enabled="true" MACAddress="080027BE3673" cable="true" speed="0" type="Am79C973">
+            <DisabledModes/>
+            <NAT>
+              <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+              <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+            </NAT>
+          </Adapter>
+          <Adapter slot="1" enabled="false" MACAddress="0800277E4661" cable="true" speed="0" type="Am79C973">
+            <DisabledModes>
+              <NAT>
+                <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+              </NAT>
+            </DisabledModes>
+          </Adapter>
+          <Adapter slot="2" enabled="false" MACAddress="080027006DFF" cable="true" speed="0" type="Am79C973">
+            <DisabledModes>
+              <NAT>
+                <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+              </NAT>
+            </DisabledModes>
+          </Adapter>
+          <Adapter slot="3" enabled="false" MACAddress="080027838F09" cable="true" speed="0" type="Am79C973">
+            <DisabledModes>
+              <NAT>
+                <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+              </NAT>
+            </DisabledModes>
+          </Adapter>
+          <Adapter slot="4" enabled="false" MACAddress="0800277376ED" cable="true" speed="0" type="Am79C973">
+            <DisabledModes>
+              <NAT>
+                <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+              </NAT>
+            </DisabledModes>
+          </Adapter>
+          <Adapter slot="5" enabled="false" MACAddress="080027FA60CE" cable="true" speed="0" type="Am79C973">
+            <DisabledModes>
+              <NAT>
+                <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+              </NAT>
+            </DisabledModes>
+          </Adapter>
+          <Adapter slot="6" enabled="false" MACAddress="080027B7D7E3" cable="true" speed="0" type="Am79C973">
+            <DisabledModes>
+              <NAT>
+                <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+              </NAT>
+            </DisabledModes>
+          </Adapter>
+          <Adapter slot="7" enabled="false" MACAddress="080027AB9728" cable="true" speed="0" type="Am79C973">
+            <DisabledModes>
+              <NAT>
+                <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+              </NAT>
+            </DisabledModes>
+          </Adapter>
+        </Network>
+        <UART>
+          <Port slot="0" enabled="false" IOBase="0x3f8" IRQ="4" hostMode="Disconnected"/>
+          <Port slot="1" enabled="false" IOBase="0x2f8" IRQ="3" hostMode="Disconnected"/>
+        </UART>
+        <LPT>
+          <Port slot="0" enabled="false" IOBase="0x378" IRQ="4"/>
+          <Port slot="1" enabled="false" IOBase="0x378" IRQ="4"/>
+        </LPT>
+        <AudioAdapter controller="AC97" driver="DirectSound" enabled="true"/>
+        <RTC localOrUTC="local"/>
+        <SharedFolders/>
+        <Clipboard mode="Bidirectional"/>
+        <IO>
+          <IoCache enabled="true" size="5"/>
+          <BandwidthGroups/>
+        </IO>
+        <HostPci>
+          <Devices/>
+        </HostPci>
+        <Guest memoryBalloonSize="0"/>
+        <GuestProperties/>
+      </Hardware>
+      <StorageControllers>
+        <StorageController name="IDE Controller" type="PIIX4" PortCount="2" useHostIOCache="true" Bootable="true">
+          <AttachedDevice type="HardDisk" port="0" device="0">
+            <Image uuid="{e157ac65-e0de-484c-a771-4d4f0adb7876}"/>
+          </AttachedDevice>
+          <AttachedDevice passthrough="false" type="DVD" port="1" device="0">
+            <Image uuid="{8063839b-01e9-45b0-8666-671d34be6620}"/>
+          </AttachedDevice>
+        </StorageController>
+      </StorageControllers>
+      <Snapshots>
+        <Snapshot uuid="{37dfb01c-6875-482a-b856-ae79cb954fae}" name="Snapshot 2" timeStamp="2012-01-05T05:14:20Z" stateFile="Snapshots/2012-01-05T05-14-20-383528200Z.sav">
+          <Description>Media Check
+</Description>
+          <Hardware version="2">
+            <CPU count="1" hotplug="false">
+              <HardwareVirtEx enabled="true" exclusive="false"/>
+              <HardwareVirtExNestedPaging enabled="true"/>
+              <HardwareVirtExVPID enabled="true"/>
+              <PAE enabled="false"/>
+              <HardwareVirtExLargePages enabled="false"/>
+              <HardwareVirtForce enabled="false"/>
+            </CPU>
+            <Memory RAMSize="512" PageFusion="false"/>
+            <HID Pointing="USBTablet" Keyboard="PS2Keyboard"/>
+            <HPET enabled="false"/>
+            <Chipset type="PIIX3"/>
+            <Boot>
+              <Order position="1" device="Floppy"/>
+              <Order position="2" device="DVD"/>
+              <Order position="3" device="HardDisk"/>
+              <Order position="4" device="None"/>
+            </Boot>
+            <Display VRAMSize="16" monitorCount="1" accelerate3D="false" accelerate2DVideo="false"/>
+            <RemoteDisplay enabled="false" authType="Null" authTimeout="5000"/>
+            <BIOS>
+              <ACPI enabled="true"/>
+              <IOAPIC enabled="false"/>
+              <Logo fadeIn="true" fadeOut="true" displayTime="0"/>
+              <BootMenu mode="MessageAndMenu"/>
+              <TimeOffset value="0"/>
+              <PXEDebug enabled="false"/>
+            </BIOS>
+            <USBController enabled="true" enabledEhci="false"/>
+            <Network>
+              <Adapter slot="0" enabled="true" MACAddress="080027BE3673" cable="true" speed="0" type="Am79C973">
+                <DisabledModes/>
+                <NAT>
+                  <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                  <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+                </NAT>
+              </Adapter>
+              <Adapter slot="1" enabled="false" MACAddress="0800277E4661" cable="true" speed="0" type="Am79C973">
+                <DisabledModes>
+                  <NAT>
+                    <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                    <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+                  </NAT>
+                </DisabledModes>
+              </Adapter>
+              <Adapter slot="2" enabled="false" MACAddress="080027006DFF" cable="true" speed="0" type="Am79C973">
+                <DisabledModes>
+                  <NAT>
+                    <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                    <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+                  </NAT>
+                </DisabledModes>
+              </Adapter>
+              <Adapter slot="3" enabled="false" MACAddress="080027838F09" cable="true" speed="0" type="Am79C973">
+                <DisabledModes>
+                  <NAT>
+                    <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                    <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+                  </NAT>
+                </DisabledModes>
+              </Adapter>
+              <Adapter slot="4" enabled="false" MACAddress="0800277376ED" cable="true" speed="0" type="Am79C973">
+                <DisabledModes>
+                  <NAT>
+                    <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                    <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+                  </NAT>
+                </DisabledModes>
+              </Adapter>
+              <Adapter slot="5" enabled="false" MACAddress="080027FA60CE" cable="true" speed="0" type="Am79C973">
+                <DisabledModes>
+                  <NAT>
+                    <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                    <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+                  </NAT>
+                </DisabledModes>
+              </Adapter>
+              <Adapter slot="6" enabled="false" MACAddress="080027B7D7E3" cable="true" speed="0" type="Am79C973">
+                <DisabledModes>
+                  <NAT>
+                    <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                    <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+                  </NAT>
+                </DisabledModes>
+              </Adapter>
+              <Adapter slot="7" enabled="false" MACAddress="080027AB9728" cable="true" speed="0" type="Am79C973">
+                <DisabledModes>
+                  <NAT>
+                    <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                    <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+                  </NAT>
+                </DisabledModes>
+              </Adapter>
+            </Network>
+            <UART>
+              <Port slot="0" enabled="false" IOBase="0x3f8" IRQ="4" hostMode="Disconnected"/>
+              <Port slot="1" enabled="false" IOBase="0x2f8" IRQ="3" hostMode="Disconnected"/>
+            </UART>
+            <LPT>
+              <Port slot="0" enabled="false" IOBase="0x378" IRQ="4"/>
+              <Port slot="1" enabled="false" IOBase="0x378" IRQ="4"/>
+            </LPT>
+            <AudioAdapter controller="AC97" driver="DirectSound" enabled="true"/>
+            <RTC localOrUTC="local"/>
+            <SharedFolders/>
+            <Clipboard mode="Bidirectional"/>
+            <IO>
+              <IoCache enabled="true" size="5"/>
+              <BandwidthGroups/>
+            </IO>
+            <HostPci>
+              <Devices/>
+            </HostPci>
+            <Guest memoryBalloonSize="0"/>
+            <GuestProperties>
+              <GuestProperty name="/VirtualBox/HostInfo/GUI/LanguageID" value="en_US" timestamp="1325674125414082500" flags=""/>
+            </GuestProperties>
+          </Hardware>
+          <StorageControllers>
+            <StorageController name="IDE Controller" type="PIIX4" PortCount="2" useHostIOCache="true" Bootable="true">
+              <AttachedDevice type="HardDisk" port="0" device="0">
+                <Image uuid="{097a4242-860b-4d85-872b-3dbd783a63e7}"/>
+              </AttachedDevice>
+              <AttachedDevice passthrough="false" type="DVD" port="1" device="0"/>
+            </StorageController>
+          </StorageControllers>
+          <Snapshots>
+            <Snapshot uuid="{0055f158-c625-4c07-820d-ae9930fcb350}" name="Snapshot 3" timeStamp="2012-01-05T07:41:54Z" stateFile="Snapshots/2012-01-05T07-41-54-901222700Z.sav">
+              <Description>Service Configuration
+</Description>
+              <Hardware version="2">
+                <CPU count="1" hotplug="false">
+                  <HardwareVirtEx enabled="true" exclusive="false"/>
+                  <HardwareVirtExNestedPaging enabled="true"/>
+                  <HardwareVirtExVPID enabled="true"/>
+                  <PAE enabled="false"/>
+                  <HardwareVirtExLargePages enabled="false"/>
+                  <HardwareVirtForce enabled="false"/>
+                </CPU>
+                <Memory RAMSize="512" PageFusion="false"/>
+                <HID Pointing="USBTablet" Keyboard="PS2Keyboard"/>
+                <HPET enabled="false"/>
+                <Chipset type="PIIX3"/>
+                <Boot>
+                  <Order position="1" device="Floppy"/>
+                  <Order position="2" device="DVD"/>
+                  <Order position="3" device="HardDisk"/>
+                  <Order position="4" device="None"/>
+                </Boot>
+                <Display VRAMSize="16" monitorCount="1" accelerate3D="false" accelerate2DVideo="false"/>
+                <RemoteDisplay enabled="false" authType="Null" authTimeout="5000"/>
+                <BIOS>
+                  <ACPI enabled="true"/>
+                  <IOAPIC enabled="false"/>
+                  <Logo fadeIn="true" fadeOut="true" displayTime="0"/>
+                  <BootMenu mode="MessageAndMenu"/>
+                  <TimeOffset value="0"/>
+                  <PXEDebug enabled="false"/>
+                </BIOS>
+                <USBController enabled="true" enabledEhci="false"/>
+                <Network>
+                  <Adapter slot="0" enabled="true" MACAddress="080027BE3673" cable="true" speed="0" type="Am79C973">
+                    <DisabledModes/>
+                    <NAT>
+                      <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                      <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+                    </NAT>
+                  </Adapter>
+                  <Adapter slot="1" enabled="false" MACAddress="0800277E4661" cable="true" speed="0" type="Am79C973">
+                    <DisabledModes>
+                      <NAT>
+                        <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                        <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+                      </NAT>
+                    </DisabledModes>
+                  </Adapter>
+                  <Adapter slot="2" enabled="false" MACAddress="080027006DFF" cable="true" speed="0" type="Am79C973">
+                    <DisabledModes>
+                      <NAT>
+                        <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                        <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+                      </NAT>
+                    </DisabledModes>
+                  </Adapter>
+                  <Adapter slot="3" enabled="false" MACAddress="080027838F09" cable="true" speed="0" type="Am79C973">
+                    <DisabledModes>
+                      <NAT>
+                        <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                        <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+                      </NAT>
+                    </DisabledModes>
+                  </Adapter>
+                  <Adapter slot="4" enabled="false" MACAddress="0800277376ED" cable="true" speed="0" type="Am79C973">
+                    <DisabledModes>
+                      <NAT>
+                        <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                        <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+                      </NAT>
+                    </DisabledModes>
+                  </Adapter>
+                  <Adapter slot="5" enabled="false" MACAddress="080027FA60CE" cable="true" speed="0" type="Am79C973">
+                    <DisabledModes>
+                      <NAT>
+                        <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                        <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+                      </NAT>
+                    </DisabledModes>
+                  </Adapter>
+                  <Adapter slot="6" enabled="false" MACAddress="080027B7D7E3" cable="true" speed="0" type="Am79C973">
+                    <DisabledModes>
+                      <NAT>
+                        <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                        <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+                      </NAT>
+                    </DisabledModes>
+                  </Adapter>
+                  <Adapter slot="7" enabled="false" MACAddress="080027AB9728" cable="true" speed="0" type="Am79C973">
+                    <DisabledModes>
+                      <NAT>
+                        <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                        <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+                      </NAT>
+                    </DisabledModes>
+                  </Adapter>
+                </Network>
+                <UART>
+                  <Port slot="0" enabled="false" IOBase="0x3f8" IRQ="4" hostMode="Disconnected"/>
+                  <Port slot="1" enabled="false" IOBase="0x2f8" IRQ="3" hostMode="Disconnected"/>
+                </UART>
+                <LPT>
+                  <Port slot="0" enabled="false" IOBase="0x378" IRQ="4"/>
+                  <Port slot="1" enabled="false" IOBase="0x378" IRQ="4"/>
+                </LPT>
+                <AudioAdapter controller="AC97" driver="DirectSound" enabled="true"/>
+                <RTC localOrUTC="local"/>
+                <SharedFolders/>
+                <Clipboard mode="Bidirectional"/>
+                <IO>
+                  <IoCache enabled="true" size="5"/>
+                  <BandwidthGroups/>
+                </IO>
+                <HostPci>
+                  <Devices/>
+                </HostPci>
+                <Guest memoryBalloonSize="0"/>
+                <GuestProperties>
+                  <GuestProperty name="/VirtualBox/HostInfo/GUI/LanguageID" value="en_US" timestamp="1325674125414082500" flags=""/>
+                </GuestProperties>
+              </Hardware>
+              <StorageControllers>
+                <StorageController name="IDE Controller" type="PIIX4" PortCount="2" useHostIOCache="true" Bootable="true">
+                  <AttachedDevice type="HardDisk" port="0" device="0">
+                    <Image uuid="{4fcb5de9-e5d6-43ed-a95d-4f1934be74be}"/>
+                  </AttachedDevice>
+                  <AttachedDevice passthrough="false" type="DVD" port="1" device="0"/>
+                </StorageController>
+              </StorageControllers>
+              <Snapshots>
+                <Snapshot uuid="{195be88e-08f9-4708-bdf7-f0e6c589c0fd}" name="Snapshot 4" timeStamp="2012-01-05T07:42:49Z" stateFile="Snapshots/2012-01-05T07-42-49-512345200Z.sav">
+                  <Description>Ethernet Device</Description>
+                  <Hardware version="2">
+                    <CPU count="1" hotplug="false">
+                      <HardwareVirtEx enabled="true" exclusive="false"/>
+                      <HardwareVirtExNestedPaging enabled="true"/>
+                      <HardwareVirtExVPID enabled="true"/>
+                      <PAE enabled="false"/>
+                      <HardwareVirtExLargePages enabled="false"/>
+                      <HardwareVirtForce enabled="false"/>
+                    </CPU>
+                    <Memory RAMSize="512" PageFusion="false"/>
+                    <HID Pointing="USBTablet" Keyboard="PS2Keyboard"/>
+                    <HPET enabled="false"/>
+                    <Chipset type="PIIX3"/>
+                    <Boot>
+                      <Order position="1" device="Floppy"/>
+                      <Order position="2" device="DVD"/>
+                      <Order position="3" device="HardDisk"/>
+                      <Order position="4" device="None"/>
+                    </Boot>
+                    <Display VRAMSize="16" monitorCount="1" accelerate3D="false" accelerate2DVideo="false"/>
+                    <RemoteDisplay enabled="false" authType="Null" authTimeout="5000"/>
+                    <BIOS>
+                      <ACPI enabled="true"/>
+                      <IOAPIC enabled="false"/>
+                      <Logo fadeIn="true" fadeOut="true" displayTime="0"/>
+                      <BootMenu mode="MessageAndMenu"/>
+                      <TimeOffset value="0"/>
+                      <PXEDebug enabled="false"/>
+                    </BIOS>
+                    <USBController enabled="true" enabledEhci="false"/>
+                    <Network>
+                      <Adapter slot="0" enabled="true" MACAddress="080027BE3673" cable="true" speed="0" type="Am79C973">
+                        <DisabledModes/>
+                        <NAT>
+                          <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                          <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+                        </NAT>
+                      </Adapter>
+                      <Adapter slot="1" enabled="false" MACAddress="0800277E4661" cable="true" speed="0" type="Am79C973">
+                        <DisabledModes>
+                          <NAT>
+                            <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                            <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+                          </NAT>
+                        </DisabledModes>
+                      </Adapter>
+                      <Adapter slot="2" enabled="false" MACAddress="080027006DFF" cable="true" speed="0" type="Am79C973">
+                        <DisabledModes>
+                          <NAT>
+                            <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                            <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+                          </NAT>
+                        </DisabledModes>
+                      </Adapter>
+                      <Adapter slot="3" enabled="false" MACAddress="080027838F09" cable="true" speed="0" type="Am79C973">
+                        <DisabledModes>
+                          <NAT>
+                            <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                            <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+                          </NAT>
+                        </DisabledModes>
+                      </Adapter>
+                      <Adapter slot="4" enabled="false" MACAddress="0800277376ED" cable="true" speed="0" type="Am79C973">
+                        <DisabledModes>
+                          <NAT>
+                            <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                            <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+                          </NAT>
+                        </DisabledModes>
+                      </Adapter>
+                      <Adapter slot="5" enabled="false" MACAddress="080027FA60CE" cable="true" speed="0" type="Am79C973">
+                        <DisabledModes>
+                          <NAT>
+                            <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                            <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+                          </NAT>
+                        </DisabledModes>
+                      </Adapter>
+                      <Adapter slot="6" enabled="false" MACAddress="080027B7D7E3" cable="true" speed="0" type="Am79C973">
+                        <DisabledModes>
+                          <NAT>
+                            <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                            <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+                          </NAT>
+                        </DisabledModes>
+                      </Adapter>
+                      <Adapter slot="7" enabled="false" MACAddress="080027AB9728" cable="true" speed="0" type="Am79C973">
+                        <DisabledModes>
+                          <NAT>
+                            <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                            <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+                          </NAT>
+                        </DisabledModes>
+                      </Adapter>
+                    </Network>
+                    <UART>
+                      <Port slot="0" enabled="false" IOBase="0x3f8" IRQ="4" hostMode="Disconnected"/>
+                      <Port slot="1" enabled="false" IOBase="0x2f8" IRQ="3" hostMode="Disconnected"/>
+                    </UART>
+                    <LPT>
+                      <Port slot="0" enabled="false" IOBase="0x378" IRQ="4"/>
+                      <Port slot="1" enabled="false" IOBase="0x378" IRQ="4"/>
+                    </LPT>
+                    <AudioAdapter controller="AC97" driver="DirectSound" enabled="true"/>
+                    <RTC localOrUTC="local"/>
+                    <SharedFolders/>
+                    <Clipboard mode="Bidirectional"/>
+                    <IO>
+                      <IoCache enabled="true" size="5"/>
+                      <BandwidthGroups/>
+                    </IO>
+                    <HostPci>
+                      <Devices/>
+                    </HostPci>
+                    <Guest memoryBalloonSize="0"/>
+                    <GuestProperties>
+                      <GuestProperty name="/VirtualBox/HostInfo/GUI/LanguageID" value="en_US" timestamp="1325674125414082500" flags=""/>
+                    </GuestProperties>
+                  </Hardware>
+                  <StorageControllers>
+                    <StorageController name="IDE Controller" type="PIIX4" PortCount="2" useHostIOCache="true" Bootable="true">
+                      <AttachedDevice type="HardDisk" port="0" device="0">
+                        <Image uuid="{b485fa05-6fab-48ea-aaf3-38046f0e2f94}"/>
+                      </AttachedDevice>
+                      <AttachedDevice passthrough="false" type="DVD" port="1" device="0"/>
+                    </StorageController>
+                  </StorageControllers>
+                </Snapshot>
+              </Snapshots>
+            </Snapshot>
+            <Snapshot uuid="{27ff3db4-8b4c-4e93-a2df-43d2457c38e6}" name="Snapshot 5" timeStamp="2012-01-09T10:51:39Z" stateFile="Snapshots/2012-01-09T10-51-39-302678400Z.sav">
+              <Description>Centos Installation		</Description>
+              <Hardware version="2">
+                <CPU count="1" hotplug="false">
+                  <HardwareVirtEx enabled="true" exclusive="false"/>
+                  <HardwareVirtExNestedPaging enabled="true"/>
+                  <HardwareVirtExVPID enabled="true"/>
+                  <PAE enabled="false"/>
+                  <HardwareVirtExLargePages enabled="false"/>
+                  <HardwareVirtForce enabled="false"/>
+                </CPU>
+                <Memory RAMSize="512" PageFusion="false"/>
+                <HID Pointing="USBTablet" Keyboard="PS2Keyboard"/>
+                <HPET enabled="false"/>
+                <Chipset type="PIIX3"/>
+                <Boot>
+                  <Order position="1" device="Floppy"/>
+                  <Order position="2" device="DVD"/>
+                  <Order position="3" device="HardDisk"/>
+                  <Order position="4" device="None"/>
+                </Boot>
+                <Display VRAMSize="16" monitorCount="1" accelerate3D="false" accelerate2DVideo="false"/>
+                <RemoteDisplay enabled="false" authType="Null" authTimeout="5000"/>
+                <BIOS>
+                  <ACPI enabled="true"/>
+                  <IOAPIC enabled="false"/>
+                  <Logo fadeIn="true" fadeOut="true" displayTime="0"/>
+                  <BootMenu mode="MessageAndMenu"/>
+                  <TimeOffset value="0"/>
+                  <PXEDebug enabled="false"/>
+                </BIOS>
+                <USBController enabled="true" enabledEhci="false"/>
+                <Network>
+                  <Adapter slot="0" enabled="true" MACAddress="080027BE3673" cable="true" speed="0" type="Am79C973">
+                    <DisabledModes/>
+                    <NAT>
+                      <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                      <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+                    </NAT>
+                  </Adapter>
+                  <Adapter slot="1" enabled="false" MACAddress="0800277E4661" cable="true" speed="0" type="Am79C973">
+                    <DisabledModes>
+                      <NAT>
+                        <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                        <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+                      </NAT>
+                    </DisabledModes>
+                  </Adapter>
+                  <Adapter slot="2" enabled="false" MACAddress="080027006DFF" cable="true" speed="0" type="Am79C973">
+                    <DisabledModes>
+                      <NAT>
+                        <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                        <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+                      </NAT>
+                    </DisabledModes>
+                  </Adapter>
+                  <Adapter slot="3" enabled="false" MACAddress="080027838F09" cable="true" speed="0" type="Am79C973">
+                    <DisabledModes>
+                      <NAT>
+                        <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                        <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+                      </NAT>
+                    </DisabledModes>
+                  </Adapter>
+                  <Adapter slot="4" enabled="false" MACAddress="0800277376ED" cable="true" speed="0" type="Am79C973">
+                    <DisabledModes>
+                      <NAT>
+                        <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                        <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+                      </NAT>
+                    </DisabledModes>
+                  </Adapter>
+                  <Adapter slot="5" enabled="false" MACAddress="080027FA60CE" cable="true" speed="0" type="Am79C973">
+                    <DisabledModes>
+                      <NAT>
+                        <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                        <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+                      </NAT>
+                    </DisabledModes>
+                  </Adapter>
+                  <Adapter slot="6" enabled="false" MACAddress="080027B7D7E3" cable="true" speed="0" type="Am79C973">
+                    <DisabledModes>
+                      <NAT>
+                        <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                        <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+                      </NAT>
+                    </DisabledModes>
+                  </Adapter>
+                  <Adapter slot="7" enabled="false" MACAddress="080027AB9728" cable="true" speed="0" type="Am79C973">
+                    <DisabledModes>
+                      <NAT>
+                        <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+                        <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+                      </NAT>
+                    </DisabledModes>
+                  </Adapter>
+                </Network>
+                <UART>
+                  <Port slot="0" enabled="false" IOBase="0x3f8" IRQ="4" hostMode="Disconnected"/>
+                  <Port slot="1" enabled="false" IOBase="0x2f8" IRQ="3" hostMode="Disconnected"/>
+                </UART>
+                <LPT>
+                  <Port slot="0" enabled="false" IOBase="0x378" IRQ="4"/>
+                  <Port slot="1" enabled="false" IOBase="0x378" IRQ="4"/>
+                </LPT>
+                <AudioAdapter controller="AC97" driver="DirectSound" enabled="true"/>
+                <RTC localOrUTC="local"/>
+                <SharedFolders/>
+                <Clipboard mode="Bidirectional"/>
+                <IO>
+                  <IoCache enabled="true" size="5"/>
+                  <BandwidthGroups/>
+                </IO>
+                <HostPci>
+                  <Devices/>
+                </HostPci>
+                <Guest memoryBalloonSize="0"/>
+                <GuestProperties>
+                  <GuestProperty name="/VirtualBox/HostInfo/GUI/LanguageID" value="en_US" timestamp="1326104401886584800" flags=""/>
+                </GuestProperties>
+              </Hardware>
+              <StorageControllers>
+                <StorageController name="IDE Controller" type="PIIX4" PortCount="2" useHostIOCache="true" Bootable="true">
+                  <AttachedDevice type="HardDisk" port="0" device="0">
+                    <Image uuid="{fbc76fca-501e-493d-a08f-969ed225ca27}"/>
+                  </AttachedDevice>
+                  <AttachedDevice passthrough="false" type="DVD" port="0" device="1">
+                    <Image uuid="{8063839b-01e9-45b0-8666-671d34be6620}"/>
+                  </AttachedDevice>
+                </StorageController>
+              </StorageControllers>
+            </Snapshot>
+          </Snapshots>
+        </Snapshot>
+      </Snapshots>
+    </Snapshot>
+    <Hardware version="2">
+      <CPU count="1" hotplug="false">
+        <HardwareVirtEx enabled="true" exclusive="false"/>
+        <HardwareVirtExNestedPaging enabled="true"/>
+        <HardwareVirtExVPID enabled="true"/>
+        <PAE enabled="false"/>
+        <HardwareVirtExLargePages enabled="false"/>
+        <HardwareVirtForce enabled="false"/>
+      </CPU>
+      <Memory RAMSize="512" PageFusion="false"/>
+      <HID Pointing="USBTablet" Keyboard="PS2Keyboard"/>
+      <HPET enabled="false"/>
+      <Chipset type="PIIX3"/>
+      <Boot>
+        <Order position="1" device="Floppy"/>
+        <Order position="2" device="DVD"/>
+        <Order position="3" device="HardDisk"/>
+        <Order position="4" device="None"/>
+      </Boot>
+      <Display VRAMSize="16" monitorCount="1" accelerate3D="false" accelerate2DVideo="false"/>
+      <RemoteDisplay enabled="false" authType="Null" authTimeout="5000"/>
+      <BIOS>
+        <ACPI enabled="true"/>
+        <IOAPIC enabled="false"/>
+        <Logo fadeIn="true" fadeOut="true" displayTime="0"/>
+        <BootMenu mode="MessageAndMenu"/>
+        <TimeOffset value="0"/>
+        <PXEDebug enabled="false"/>
+      </BIOS>
+      <USBController enabled="true" enabledEhci="false"/>
+      <Network>
+        <Adapter slot="0" enabled="true" MACAddress="080027BE3673" cable="true" speed="0" type="Am79C973">
+          <DisabledModes/>
+          <NAT>
+            <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+            <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+          </NAT>
+        </Adapter>
+        <Adapter slot="1" enabled="false" MACAddress="0800277E4661" cable="true" speed="0" type="Am79C973">
+          <DisabledModes>
+            <NAT>
+              <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+              <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+            </NAT>
+          </DisabledModes>
+        </Adapter>
+        <Adapter slot="2" enabled="false" MACAddress="080027006DFF" cable="true" speed="0" type="Am79C973">
+          <DisabledModes>
+            <NAT>
+              <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+              <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+            </NAT>
+          </DisabledModes>
+        </Adapter>
+        <Adapter slot="3" enabled="false" MACAddress="080027838F09" cable="true" speed="0" type="Am79C973">
+          <DisabledModes>
+            <NAT>
+              <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+              <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+            </NAT>
+          </DisabledModes>
+        </Adapter>
+        <Adapter slot="4" enabled="false" MACAddress="0800277376ED" cable="true" speed="0" type="Am79C973">
+          <DisabledModes>
+            <NAT>
+              <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+              <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+            </NAT>
+          </DisabledModes>
+        </Adapter>
+        <Adapter slot="5" enabled="false" MACAddress="080027FA60CE" cable="true" speed="0" type="Am79C973">
+          <DisabledModes>
+            <NAT>
+              <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+              <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+            </NAT>
+          </DisabledModes>
+        </Adapter>
+        <Adapter slot="6" enabled="false" MACAddress="080027B7D7E3" cable="true" speed="0" type="Am79C973">
+          <DisabledModes>
+            <NAT>
+              <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+              <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+            </NAT>
+          </DisabledModes>
+        </Adapter>
+        <Adapter slot="7" enabled="false" MACAddress="080027AB9728" cable="true" speed="0" type="Am79C973">
+          <DisabledModes>
+            <NAT>
+              <DNS pass-domain="true" use-proxy="false" use-host-resolver="false"/>
+              <Alias logging="false" proxy-only="false" use-same-ports="false"/>
+            </NAT>
+          </DisabledModes>
+        </Adapter>
+      </Network>
+      <UART>
+        <Port slot="0" enabled="false" IOBase="0x3f8" IRQ="4" hostMode="Disconnected"/>
+        <Port slot="1" enabled="false" IOBase="0x2f8" IRQ="3" hostMode="Disconnected"/>
+      </UART>
+      <LPT>
+        <Port slot="0" enabled="false" IOBase="0x378" IRQ="4"/>
+        <Port slot="1" enabled="false" IOBase="0x378" IRQ="4"/>
+      </LPT>
+      <AudioAdapter controller="AC97" driver="DirectSound" enabled="true"/>
+      <RTC localOrUTC="local"/>
+      <SharedFolders/>
+      <Clipboard mode="Bidirectional"/>
+      <IO>
+        <IoCache enabled="true" size="5"/>
+        <BandwidthGroups/>
+      </IO>
+      <HostPci>
+        <Devices/>
+      </HostPci>
+      <Guest memoryBalloonSize="0"/>
+      <GuestProperties>
+        <GuestProperty name="/VirtualBox/HostInfo/GUI/LanguageID" value="en_US" timestamp="1325674125414082500" flags=""/>
+      </GuestProperties>
+    </Hardware>
+    <StorageControllers>
+      <StorageController name="IDE Controller" type="PIIX4" PortCount="2" useHostIOCache="true" Bootable="true">
+        <AttachedDevice type="HardDisk" port="0" device="0">
+          <Image uuid="{6bbd3bd0-147c-4e93-90ec-466e8434f441}"/>
+        </AttachedDevice>
+        <AttachedDevice passthrough="false" type="DVD" port="1" device="0"/>
+      </StorageController>
+    </StorageControllers>
+  </Machine>
+</VirtualBox>

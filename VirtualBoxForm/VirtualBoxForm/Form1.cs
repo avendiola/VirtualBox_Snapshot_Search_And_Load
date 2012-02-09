@@ -1,17 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Xml;
 using System.Xml.XPath;
 using System.IO;
-using System.Reflection;
 using System.Collections;
 using System.Diagnostics;
+using System.DirectoryServices;
+using System.Data;
+using System.Reflection;
+using System.Drawing;
 
 namespace VirtualBoxForm
 {
@@ -31,14 +30,15 @@ namespace VirtualBoxForm
                 dom.Load("Virtual Machine.xml");
 
                 //SECTION 2. Initialize the TreeView control.
-                treeView1.Nodes.Clear();
-                treeView1.Nodes.Add(new TreeNode(dom.DocumentElement.Name));
+                treeXML.Nodes.Clear();
+                treeXML.Nodes.Add(new TreeNode(dom.DocumentElement.Name));
                 TreeNode tNode = new TreeNode();
-                tNode = treeView1.Nodes[0];
+                tNode = treeXML.Nodes[0];
 
                 //SECTION 3. Populate the TreeView with the DOM nodes.
                 AddNode(dom.DocumentElement, tNode);
-                treeView1.ExpandAll();
+                treeXML.ExpandAll();
+
             }
             catch (XmlException xmlEx)
             {
@@ -85,7 +85,7 @@ namespace VirtualBoxForm
 
         private void ClearBackColor()
         {
-            TreeNodeCollection nodes = treeView1.Nodes;
+            TreeNodeCollection nodes = treeXML.Nodes;
             foreach (TreeNode n in nodes)
             {
                 ClearRecursive(n);
@@ -109,7 +109,7 @@ namespace VirtualBoxForm
 
         private void FindByText()
         {
-            TreeNodeCollection nodes = treeView1.Nodes;
+            TreeNodeCollection nodes = treeXML.Nodes;
             foreach (TreeNode n in nodes)
             {
                 FindRecursive(n);
@@ -125,22 +125,6 @@ namespace VirtualBoxForm
                     tn.BackColor = Color.Yellow;
                 FindRecursive(tn);
             }
-        }
-
-        private void showNodes_Click(object sender, EventArgs e)
-        {
-            //disable redrawing of treeView1 to prevent flickering while changes are made.
-            treeView1.BeginUpdate();
-            //collapse all nodes of treeView1.
-            treeView1.CollapseAll();
-            //add the checkForCheckedChildren event handler to the BeforeExpand event.
-            treeView1.BeforeExpand += checkForCheckedChildren;
-            //expand all nodes of treeView1. Nodes without checked children are prevented from expanding by the checkForCheckedChildren event handler.
-            treeView1.ExpandAll();
-            //remove the checkForCheckedChildren event handler from the BeforeExpand event so manual node expansion will work correctly.
-            treeView1.BeforeExpand -= checkForCheckedChildren;
-            //enable redrawing of treeView1.
-            treeView1.EndUpdate();
         }
 
         private void checkForCheckedChildren(object sender, TreeViewCancelEventArgs e)
@@ -159,9 +143,33 @@ namespace VirtualBoxForm
             return false;
         }
 
+        private void doNodes(XmlNode xn, TreeNodeCollection tn)
+        {
+            foreach (XmlNode child in xn.ChildNodes)
+            {
+                TreeNode newTN = null;
+
+                //add a TreeNode to newTN, text depends on whether or not the current
+                //XmlNode has children
+                if (!child.HasChildNodes && !(child.Value == null))
+                {
+                    newTN = tn.Add(child.Value);
+                }
+
+                else
+                {
+                    newTN = tn.Add(child.Name);
+
+                    //call this function again to do the children of the
+                    //current XmlNode
+                    doNodes(child, newTN.Nodes);
+                }
+            }
+        }
+
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
-            lstbox.Items.Add(treeView1.SelectedNode);
+            lstbox.Items.Add(treeXML.SelectedNode);
         }
 
         private void tabControl1_Click(object sender, EventArgs e)
@@ -175,8 +183,14 @@ namespace VirtualBoxForm
             cmdNodeSearch.Enabled = true;
         }
 
-        private void lstbox_DoubleClick(object sender, EventArgs e)
+        private void lstbox_DoubleClick(object sender, TreeNodeMouseClickEventArgs e)
         {
+            TreeNode nName = e.Node;
+            string fileLocation = "";
+
+            fileLocation = (string)nName.Tag;
+            if (fileLocation != "")
+            {
                 System.Diagnostics.Process vbproc = new System.Diagnostics.Process();
                 vbproc.StartInfo.FileName = @"C:\Documents and Settings\szorilla\VirtualBox VMs\Virtual Machine\Virtual Machine.vbox";
                 vbproc.StartInfo.Arguments = "VirtualBox.exe";
@@ -184,4 +198,26 @@ namespace VirtualBoxForm
                 vbproc.Start();
             }
         }
+
+        //private void treeView1_NodeMouseDoubleClick(object sender, TreeNodeMouseClickEventArgs e)
+        //{
+        //    TreeNode nNname = e.Node;
+        //    string fileLocation = "";
+
+        //    fileLocation = (string)nNname.Tag;
+
+        //    if (fileLocation != "")
+        //    {
+        //        System.Diagnostics.Process vbproc = new System.Diagnostics.Process();
+        //        vbproc.StartInfo.FileName = @"C:\Documents and Settings\szorilla\VirtualBox VMs\Virtual Machine\Virtual Machine.vbox";
+        //        vbproc.Start(); 
+        //    }
+        //}
+
+        private void cmdNodeSearch_Click_1(object sender, EventArgs e)
+        {
+            ClearBackColor();
+            FindByText();
+        }
     }
+}
