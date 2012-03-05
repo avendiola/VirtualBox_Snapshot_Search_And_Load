@@ -5,12 +5,12 @@ using System.Windows.Forms;
 using System.Xml;
 using System.Xml.XPath;
 using System.IO;
-using System.Collections;
 using System.Diagnostics;
 using System.DirectoryServices;
 using System.Data;
-using System.Reflection;
 using System.Drawing;
+using System.Runtime.InteropServices;
+using VirtualBox;
 
 namespace VirtualBoxForm
 {
@@ -27,7 +27,7 @@ namespace VirtualBoxForm
             {
                 //SECTION 1. Create a DOM Document and load the XML data into it.
                 XmlDocument dom = new XmlDocument();
-                dom.Load("Virtual Machine.xml");
+                dom.Load("myMachineXP.xml");
 
                 //SECTION 2. Initialize the TreeView control.
                 treeXML.Nodes.Clear();
@@ -43,10 +43,6 @@ namespace VirtualBoxForm
             catch (XmlException xmlEx)
             {
                 MessageBox.Show(xmlEx.Message);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
             }
         }
 
@@ -101,12 +97,6 @@ namespace VirtualBoxForm
             }
         }
 
-        private void cmdNodeSearch_Click(object sender, EventArgs e)
-        {
-            ClearBackColor();
-            FindByText();
-        }
-
         private void FindByText()
         {
             TreeNodeCollection nodes = treeXML.Nodes;
@@ -155,7 +145,6 @@ namespace VirtualBoxForm
                 {
                     newTN = tn.Add(child.Value);
                 }
-
                 else
                 {
                     newTN = tn.Add(child.Name);
@@ -183,41 +172,121 @@ namespace VirtualBoxForm
             cmdNodeSearch.Enabled = true;
         }
 
-        private void lstbox_DoubleClick(object sender, TreeNodeMouseClickEventArgs e)
-        {
-            TreeNode nName = e.Node;
-            string fileLocation = "";
-
-            fileLocation = (string)nName.Tag;
-            if (fileLocation != "")
-            {
-                System.Diagnostics.Process vbproc = new System.Diagnostics.Process();
-                vbproc.StartInfo.FileName = @"C:\Documents and Settings\szorilla\VirtualBox VMs\Virtual Machine\Virtual Machine.vbox";
-                vbproc.StartInfo.Arguments = "VirtualBox.exe";
-                vbproc.StartInfo.WorkingDirectory = @"C:\Program Files\Oracle\VirtualBox\VirtualBox.exe";
-                vbproc.Start();
-            }
-        }
-
-        //private void treeView1_NodeMouseDoubleClick(object sender, TreeNodeMouseClickEventArgs e)
-        //{
-        //    TreeNode nNname = e.Node;
-        //    string fileLocation = "";
-
-        //    fileLocation = (string)nNname.Tag;
-
-        //    if (fileLocation != "")
-        //    {
-        //        System.Diagnostics.Process vbproc = new System.Diagnostics.Process();
-        //        vbproc.StartInfo.FileName = @"C:\Documents and Settings\szorilla\VirtualBox VMs\Virtual Machine\Virtual Machine.vbox";
-        //        vbproc.Start(); 
-        //    }
-        //}
-
-        private void cmdNodeSearch_Click_1(object sender, EventArgs e)
+        private void cmdNodeSearch_Click_2(object sender, EventArgs e)
         {
             ClearBackColor();
             FindByText();
         }
+
+        private void lstbox_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            //Load the specific snapshot from XML File of Virtual Machine
+            if (lstbox.Text.Equals("Service Configuration"))
+            {
+                System.Diagnostics.Process process = new System.Diagnostics.Process();
+                process.StartInfo.FileName = @"C:\Program Files\Oracle\VirtualBox\VBoxManage.exe";
+                process.StartInfo.Arguments = "snapshot \"myMachineXP\" restore \"Snapshot 2\"";
+                process.StartInfo.UseShellExecute = false;
+                process.StartInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+                process.Start();
+                process.WaitForExit();
+
+                System.Diagnostics.Process vbprocess = new System.Diagnostics.Process();
+                vbprocess.StartInfo.FileName = @"C:\Program Files\Oracle\VirtualBox\VBoxManage.exe";
+                vbprocess.StartInfo.Arguments = "startvm \"myMachineXP\"";
+                vbprocess.StartInfo.UseShellExecute = false;
+                vbprocess.StartInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+                vbprocess.Start();
+            }
+
+            else if (lstbox.Text.Equals("CentOS Installation"))
+            {
+                System.Diagnostics.Process process = new System.Diagnostics.Process();
+                process.StartInfo.FileName = @"C:\Program Files\Oracle\VirtualBox\VBoxManage.exe";
+                process.StartInfo.Arguments = "snapshot \"myMachineXP\" restore \"Snapshot 1\"";
+                process.StartInfo.UseShellExecute = false;
+                process.StartInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+                process.Start();
+                process.WaitForExit();
+
+                System.Diagnostics.Process vbprocess = new System.Diagnostics.Process();
+                vbprocess.StartInfo.FileName = @"C:\Program Files\Oracle\VirtualBox\VBoxManage.exe";
+                vbprocess.StartInfo.Arguments = "startvm \"myMachineXP\"";
+                vbprocess.StartInfo.UseShellExecute = false;
+                vbprocess.StartInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+                vbprocess.Start();
+            }
+
+            else if (lstbox.Text.Equals("Network Configuration"))
+            {
+                System.Diagnostics.Process process = new System.Diagnostics.Process();
+                process.StartInfo.FileName = @"C:\Program Files\Oracle\VirtualBox\VBoxManage.exe";
+                process.StartInfo.Arguments = "snapshot \"myMachineXP\" restore \"Snapshot 3\"";
+                process.StartInfo.UseShellExecute = false;
+                process.StartInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+                process.Start();
+                process.WaitForExit();
+
+                System.Diagnostics.Process vbprocess = new System.Diagnostics.Process();
+                vbprocess.StartInfo.FileName = @"C:\Program Files\Oracle\VirtualBox\VBoxManage.exe";
+                vbprocess.StartInfo.Arguments = "startvm \"myMachineXP\"";
+                vbprocess.StartInfo.UseShellExecute = false;
+                vbprocess.StartInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+                vbprocess.Start();
+            }
+
+            else if (lstbox.Text.Equals("Ethernet Device"))
+            {
+                System.Diagnostics.Process process = new System.Diagnostics.Process();
+                process.StartInfo.FileName = @"C:\Program Files\Oracle\VirtualBox\VBoxManage.exe";
+                process.StartInfo.Arguments = "snapshot \"myMachineXP\" restore \"Snapshot 4\"";
+                process.StartInfo.UseShellExecute = false;
+                process.StartInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+                process.Start();
+                process.WaitForExit();
+
+                System.Diagnostics.Process vbprocess = new System.Diagnostics.Process();
+                vbprocess.StartInfo.FileName = @"C:\Program Files\Oracle\VirtualBox\VBoxManage.exe";
+                vbprocess.StartInfo.Arguments = "startvm \"myMachineXP\"";
+                vbprocess.StartInfo.UseShellExecute = false;
+                vbprocess.StartInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+                vbprocess.Start();
+            }
+        }
+
+        private void treeXML_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+            lstbox.Items.Add(treeXML.SelectedNode.Text);
+        }
     }
 }
+                            
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
