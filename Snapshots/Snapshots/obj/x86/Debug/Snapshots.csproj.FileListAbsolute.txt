@@ -1,0 +1,9 @@
+c:\documents and settings\szorilla\my documents\visual studio 2010\Projects\Snapshots\Snapshots\bin\Debug\Snapshots.exe
+c:\documents and settings\szorilla\my documents\visual studio 2010\Projects\Snapshots\Snapshots\bin\Debug\Snapshots.pdb
+c:\documents and settings\szorilla\my documents\visual studio 2010\Projects\Snapshots\Snapshots\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\szorilla\my documents\visual studio 2010\Projects\Snapshots\Snapshots\obj\x86\Debug\Snapshots.Form1.resources
+c:\documents and settings\szorilla\my documents\visual studio 2010\Projects\Snapshots\Snapshots\obj\x86\Debug\Snapshots.Properties.Resources.resources
+c:\documents and settings\szorilla\my documents\visual studio 2010\Projects\Snapshots\Snapshots\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\documents and settings\szorilla\my documents\visual studio 2010\Projects\Snapshots\Snapshots\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\documents and settings\szorilla\my documents\visual studio 2010\Projects\Snapshots\Snapshots\obj\x86\Debug\Snapshots.exe
+c:\documents and settings\szorilla\my documents\visual studio 2010\Projects\Snapshots\Snapshots\obj\x86\Debug\Snapshots.pdb
